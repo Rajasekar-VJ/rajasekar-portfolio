@@ -202,9 +202,12 @@ function initResumeModal() {
 
   if (!modal) return;
 
+  let lastFocusedElement = null;
+
   openButtons.forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
+      lastFocusedElement = btn;
       openModal();
     });
   });
@@ -224,6 +227,21 @@ function initResumeModal() {
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && modal.classList.contains('open')) {
       closeModal();
+    }
+  });
+
+  // Focus trap inside modal
+  modal.addEventListener('keydown', (e) => {
+    if (!modal.classList.contains('open') || e.key !== 'Tab') return;
+    const focusable = modal.querySelectorAll(
+      'button:not([disabled]), [href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'
+    );
+    const first = focusable[0];
+    const last  = focusable[focusable.length - 1];
+    if (e.shiftKey) {
+      if (document.activeElement === first) { e.preventDefault(); last.focus(); }
+    } else {
+      if (document.activeElement === last)  { e.preventDefault(); first.focus(); }
     }
   });
 
@@ -292,11 +310,15 @@ TRAINING & ROADMAP
   function openModal() {
     modal.classList.add('open');
     document.body.style.overflow = 'hidden';
+    // Move focus to close button for screen readers
+    setTimeout(() => { if (closeBtn) closeBtn.focus(); }, 50);
   }
 
   function closeModal() {
     modal.classList.remove('open');
     document.body.style.overflow = '';
+    // Return focus to the element that triggered the modal
+    if (lastFocusedElement) lastFocusedElement.focus();
   }
 }
 
@@ -405,7 +427,7 @@ function initSmoothScrollSpy() {
 
   function updateActiveLink() {
     let currentId = '';
-    const scrollY = window.pageYOffset;
+    const scrollY = window.scrollY;
 
     sections.forEach(section => {
       const sectionTop = section.offsetTop - 120;
