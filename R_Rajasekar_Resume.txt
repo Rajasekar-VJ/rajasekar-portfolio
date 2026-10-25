@@ -1,0 +1,78 @@
+================================================================================
+R RAJASEKAR — RESUME & PROFESSIONAL PROFILE
+================================================================================
+Role: Technical Support Associate | Aspiring Cloud & DevOps Engineer
+Current Company: Sutherland (D2 Technical Support Team — Currently Working)
+Experience: 3 Years Supporting Amazon Consumer Devices & Digital Services
+Email: sekarvj05@gmail.com
+Phone/Location: India (Open to Relocation & Remote Roles)
+LinkedIn: https://www.linkedin.com/in/raja-sekar-0652a8262
+GitHub: https://github.com/Rajasekar-VJ
+Portfolio: https://rajasekar-portfolio-rajasekar.vercel.app
+
+================================================================================
+PROFESSIONAL SUMMARY
+================================================================================
+I am a technical support professional currently working at Sutherland, with
+3 years of experience supporting Amazon consumer devices and digital services.
+I have completed AWS training and am currently learning DevOps, with the goal of
+transitioning into a Cloud Engineer, AWS Cloud Support, or Junior DevOps role.
+
+================================================================================
+CURRENT WORK EXPERIENCE
+================================================================================
+Sutherland — D2 Technical Support Team
+Role: Technical Support Associate
+Tenure: 3 Years (Currently Working)
+
+Core Responsibilities & Products Supported:
+• Fire TV Stick: Device setup, Wi-Fi/network connectivity, HDMI display settings,
+  audio/video synchronization, app crashes, remote pairing, and firmware troubleshooting.
+• Amazon Echo: Device provisioning, Wi-Fi pairing, multi-room audio grouping,
+  Bluetooth audio routing, and Alexa voice command diagnostic troubleshooting.
+• Prime Video: Video streaming playback latency, buffering optimization, DRM authorization,
+  and multi-device profile access troubleshooting.
+• Prime Gaming: Gaming service integrations, claim verification for digital rewards/loot,
+  Twitch account linking, and subscription entitlements.
+• Kindle eBooks & Devices: E-reader hardware diagnostics, touch responsiveness,
+  Whispersync cloud sync, and digital library access support.
+
+Key Competencies & Operations:
+• Systematic diagnostic troubleshooting and root cause analysis (RCA).
+• Strict SLA adherence, customer communication, and dispute de-escalation.
+• Standard Operating Procedure (SOP) execution and incident ticket lifecycle management.
+*(Note: Experience represents enterprise consumer technical support; does not claim professional Cloud or DevOps administration.)*
+
+================================================================================
+FEATURED CLOUD PROJECT: AWS-BASED FOOD MICROSERVICES WEBSITE
+================================================================================
+Architecture: Decoupled, asynchronous event-driven system built using 6 integrated AWS services:
+• Amazon EC2: Hosts frontend presentation tier and microservice routing.
+• Amazon SQS: Decoupled FIFO/Standard message queue absorbing traffic spikes and preventing drops.
+• AWS Lambda: Serverless compute triggered by queue events for instantaneous order validation.
+• Amazon DynamoDB: Ultra-fast sub-10ms NoSQL store caching restaurant menus and active carts.
+• Amazon RDS: Relational database providing ACID compliance for transactional payment and order history.
+• Amazon SNS: Multi-endpoint pub/sub fan-out delivering real-time SMS alerts and kitchen dispatch updates.
+
+================================================================================
+TECHNICAL SKILLS & ROADMAP
+================================================================================
+• AWS Cloud (Trained & Project-Validated):
+  Amazon EC2, Amazon RDS, Amazon DynamoDB, AWS Lambda, Amazon SQS, Amazon SNS,
+  Amazon S3, AWS IAM, Amazon CloudWatch, VPC fundamentals.
+
+• DevOps Ecosystem (Currently Learning — Target: 1 Month):
+  Docker (Containerization), Kubernetes fundamentals, CI/CD Pipelines (GitHub Actions),
+  Git & GitHub, Linux Administration, Shell Scripting.
+
+• Support & Operations:
+  Root Cause Analysis (RCA), Diagnostic Troubleshooting, SLA Compliance, Customer Support,
+  Incident Management.
+
+================================================================================
+EDUCATION & CERTIFICATION ROADMAP
+================================================================================
+• AWS Cloud Training: Completed comprehensive curriculum covering AWS Core Services & Microservices.
+• DevOps Engineering Training: In Progress (Expected completion within 1 month).
+• Target Roles: Cloud Engineer | AWS Cloud Support | Junior DevOps
+================================================================================
